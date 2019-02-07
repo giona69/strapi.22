@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "modules",
+  "info": {
+    "name": "module",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "modules",
+      "dominant": true
+    }
+  }
+}
